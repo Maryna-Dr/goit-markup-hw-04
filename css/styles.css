@@ -64,6 +64,12 @@ section {
     padding-top: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .subtitle {
     margin-bottom: 10px;
 }
