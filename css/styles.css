@@ -272,9 +272,12 @@ img {
 }
 
 .features-list .icon-box {
-    margin-bottom: 30px;
-    padding: 25px 100px;
     width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
 
     background-color: var(--secondary-bg-color);
@@ -479,30 +482,26 @@ img {
     gap: 10px;
 }
 
-.join-list > .item {
-    width: 44px;
-    height: 44px;
-
-    border-radius: 50%;
-    background-color: var(--svg-bgc-footer);
-}
-
-.join-list > .item:hover,
-.join-list > .item:focus {
-    background-color: var(--accent-color);
-}
-
 .join-list .join-link {
     display: flex;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
 
     align-items: center;
     justify-content: center;
+
+    color: var(--primary-white-color);
+    background-color: var(--svg-bgc-footer);
+}
+
+.join-list .join-link:hover,
+.join-list .join-link:focus {
+    background-color: var(--accent-color);
 }
 
 .join-list .join-icon {
-    fill: var(--primary-white-color);
+    fill: currentColor;
 }
 
 
@@ -547,17 +546,25 @@ img {
 }
 
 /* Portfolio-examples */
-.portfolio-examples > .item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-examples .examples-box {
+    display: block;
+    text-decoration: none;
 }
+
+.examples-box:hover,
+.examples-box:focus {
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+}
+
 
 .portfolio-examples .title-box {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    border: 1px solid var(--portfolio-border-cl);
 
+    border: 1px solid var(--portfolio-border-cl);
+    border-top: 0;
 }
 
 .portfolio-examples .title {
@@ -571,6 +578,8 @@ img {
 }
 
 .portfolio-examples .text {
+    color: var(--primary-text-color);
+
     font-size: 16px;
     line-height: 1.88;
 }
