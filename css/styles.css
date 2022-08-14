@@ -568,6 +568,7 @@ img {
 }
 
 .portfolio-examples .title {
+    text-decoration: none;
     margin-bottom: 4px;
 
     color: var(--title-text-color);
